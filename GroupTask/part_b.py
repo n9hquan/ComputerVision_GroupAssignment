@@ -31,9 +31,9 @@ while True:
         cv2.imshow('Right', frameR)
 
         # After 5 seconds, take snapshots
-        if not snapshot_taken and time.time() - start_time >= 10:
-            cv2.imwrite('snapshot_left_1.jpg', frameL)
-            cv2.imwrite('snapshot_right_1.jpg', frameR)
+        if not snapshot_taken and time.time() - start_time >= 5:
+            cv2.imwrite('snapshot_left_PA_book.jpg', frameL)
+            cv2.imwrite('snapshot_right_PA_book.jpg', frameR)
             print(" Snapshots saved as 'snapshot_left.jpg' and 'snapshot_right.jpg'")
             snapshot_taken = True
 
